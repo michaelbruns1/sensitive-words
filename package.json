@@ -1,0 +1,42 @@
+{
+  "name": "@michaelbruns/sensitive-words",
+  "version": "1.1.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest src",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelbruns/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Michael Bruns (https://michaelbruns.one)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelbruns/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/michaelbruns/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "jest": "^18.0.0",
+    "np": "^2.12.0",
+    "watch": "^1.0.1"
+  }
+}
